@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design by KRN | Video Editing & Graphic Design Portfolio</title>
+    <meta name="description" content="Stunning digital portfolio of Design by KRN. Premium video editing, cinematic motion graphics, and elite graphic design services. Available for freelance opportunities.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-outline" id="cursorOutline"></div>
+
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-accent">KRN</span>
+                <span class="logo-text">DESIGN</span>
+            </a>
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#work" class="nav-link">Work</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#process" class="nav-link">Process</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <span class="status-tag"><span class="status-dot"></span>Available for projects</span>
+                <a href="#contact" class="btn btn-primary btn-sm">Hire Me</a>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav" id="mobileNav">
+        <a href="#home" class="mobile-link">Home</a>
+        <a href="#work" class="mobile-link">Work</a>
+        <a href="#services" class="mobile-link">Services</a>
+        <a href="#process" class="mobile-link">Process</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+        <a href="#contact" class="btn btn-primary">Hire Me</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-bg-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="hero-badge fade-in-up">VISUAL STORYTELLER & DESIGNER</span>
+                <h1 class="hero-title fade-in-up delay-1">
+                    Where Motion <br>Meets <span class="gradient-text">Emotion</span>
+                </h1>
+                <p class="hero-subtitle fade-in-up delay-2">
+                    I am <strong class="highlight-text">Design by KRN</strong>. I craft high-octane video edits, immersive motion graphics, and premium visual identities that demand attention and convert audiences.
+                </p>
+                <div class="hero-actions fade-in-up delay-3">
+                    <a href="#work" class="btn btn-primary">
+                        <span>Explore My Work</span>
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Start A Project</span>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Hero Stats Grid -->
+            <div class="hero-stats-grid fade-in-up delay-4">
+                <div class="stat-card glass-card">
+                    <div class="stat-icon-wrapper video-glow">
+                        <i data-lucide="video"></i>
+                    </div>
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Videos Edited</div>
+                </div>
+                <div class="stat-card glass-card">
+                    <div class="stat-icon-wrapper design-glow">
+                        <i data-lucide="palette"></i>
+                    </div>
+                    <div class="stat-number">120+</div>
+                    <div class="stat-label">Graphics Delivered</div>
+                </div>
+                <div class="stat-card glass-card">
+                    <div class="stat-icon-wrapper client-glow">
+                        <i data-lucide="smile"></i>
+                    </div>
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Client Satisfaction</div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span class="scroll-mouse"><span class="scroll-wheel"></span></span>
+            <span class="scroll-text">Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- Work Showcase Section -->
+    <section id="work" class="work-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">PORTFOLIO</span>
+                <h2 class="section-title">Selected Projects</h2>
+                <p class="section-desc">A curated collection of cinematic video edits and striking graphic design projects crafted for global creators and brands.</p>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="video">Video Editing</button>
+                <button class="filter-btn" data-filter="design">Graphic Design</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="portfolio-grid" id="portfolioGrid">
+                
+                <!-- Project Item 1 (Video) -->
+                <div class="portfolio-item glass-card reveal-on-scroll" data-category="video" data-project-id="1">
+                    <div class="portfolio-thumb">
+                        <img src="assets/video-thumb-1.png" alt="Cinematic Travel Reel Thumbnail" loading="lazy">
+                        <div class="portfolio-hover">
+                            <span class="play-btn"><i data-lucide="play"></i></span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="item-tag tag-video">Video Editing</span>
+                        <h3 class="item-title">Ethereal Peaks - Travel Reel</h3>
+                        <p class="item-desc">Cinematic landscape editing, advanced color grading, and atmospheric sound design.</p>
+                    </div>
+                </div>
+
+                <!-- Project Item 2 (Video) -->
+                <div class="portfolio-item glass-card reveal-on-scroll" data-category="video" data-project-id="2">
+                    <div class="portfolio-thumb">
+                        <img src="assets/video-thumb-2.png" alt="Cyberpunk Gaming Montage Thumbnail" loading="lazy">
+                        <div class="portfolio-hover">
+                            <span class="play-btn"><i data-lucide="play"></i></span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="item-tag tag-video">Video Editing</span>
+                        <h3 class="item-title">Neon Pulse - Gaming Montage</h3>
+                        <p class="item-desc">High-octane visual effects, rhythmic audio syncing, and creative frame transitions.</p>
+                    </div>
+                </div>
+
+                <!-- Project Item 3 (Video) -->
+                <div class="portfolio-item glass-card reveal-on-scroll" data-category="video" data-project-id="3">
+                    <div class="portfolio-thumb">
+                        <img src="assets/video-thumb-3.png" alt="Corporate Promo Video Thumbnail" loading="lazy">
+                        <div class="portfolio-hover">
+                            <span class="play-btn"><i data-lucide="play"></i></span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="item-tag tag-video">Video Editing</span>
+                        <h3 class="item-title">Vertex Tech - Brand Launch Promo</h3>
+                        <p class="item-desc">Commercial editing, corporate narrative structure, and premium motion graphics.</p>
+                    </div>
+                </div>
+
+                <!-- Project Item 4 (Design) -->
+                <div class="portfolio-item glass-card reveal-on-scroll" data-category="design" data-project-id="4">
+                    <div class="portfolio-thumb">
+                        <img src="assets/design-img-1.png" alt="Minimalist Brand Identity Mockup" loading="lazy">
+                        <div class="portfolio-hover">
+                            <span class="play-btn"><i data-lucide="maximize-2"></i></span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="item-tag tag-design">Graphic Design</span>
+                        <h3 class="item-title">Aether Luxury Brand Kit</h3>
+                        <p class="item-desc">Minimalist high-end brand guidelines, corporate identity stationery, and logo layout.</p>
+                    </div>
+                </div>
+
+                <!-- Project Item 5 (Design) -->
+                <div class="portfolio-item glass-card reveal-on-scroll" data-category="design" data-project-id="5">
+                    <div class="portfolio-thumb">
+                        <img src="assets/design-img-2.png" alt="Synthwave Neon Poster Design" loading="lazy">
+                        <div class="portfolio-hover">
+                            <span class="play-btn"><i data-lucide="maximize-2"></i></span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="item-tag tag-design">Graphic Design</span>
+                        <h3 class="item-title">Retro Outrun Poster Series</h3>
+                        <p class="item-desc">Vibrant synthwave key art, custom typography lockup, and cyberpunk digital illustration.</p>
+                    </div>
+                </div>
+
+                <!-- Project Item 6 (Design) -->
+                <div class="portfolio-item glass-card reveal-on-scroll" data-category="design" data-project-id="6">
+                    <div class="portfolio-thumb">
+                        <img src="assets/design-img-3.png" alt="SaaS Mobile App UI Mockup" loading="lazy">
+                        <div class="portfolio-hover">
+                            <span class="play-btn"><i data-lucide="maximize-2"></i></span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="item-tag tag-design">Graphic Design</span>
+                        <h3 class="item-title">AeroSync Mobile Dashboard UI</h3>
+                        <p class="item-desc">High-fidelity dark mode application interface design, glowing charts, and user experience layouts.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">EXPERTISE</span>
+                <h2 class="section-title">My Craft</h2>
+                <p class="section-desc">Delivering tailored media services that elevate brand value and captivate audiences globally.</p>
+            </div>
+
+            <div class="services-grid">
+                
+                <!-- Service 1 -->
+                <div class="service-card glass-card reveal-on-scroll">
+                    <div class="service-glow-bg video-glow"></div>
+                    <div class="service-icon"><i data-lucide="clapperboard"></i></div>
+                    <h3 class="service-title">Cinematic Video Editing</h3>
+                    <p class="service-text">High-end dynamic editing tailored for YouTube, promotional campaigns, commercial advertisements, and social media reels. Expert sound integration, transitions, and immersive pacing.</p>
+                    <ul class="service-features">
+                        <li><i data-lucide="check" class="check-icon"></i> Color Grading & LUT Matching</li>
+                        <li><i data-lucide="check" class="check-icon"></i> SFX Design & Audio Mixing</li>
+                        <li><i data-lucide="check" class="check-icon"></i> Motion Graphics & Typography</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card glass-card reveal-on-scroll">
+                    <div class="service-glow-bg design-glow"></div>
+                    <div class="service-icon"><i data-lucide="vector"></i></div>
+                    <h3 class="service-title">Premium Graphic Design</h3>
+                    <p class="service-text">Creating visually rich assets that tell a story. From sleek vector branding to immersive print-ready posters and high-fidelity, user-centered application screen mockups.</p>
+                    <ul class="service-features">
+                        <li><i data-lucide="check" class="check-icon"></i> Brand & Visual Identity Kits</li>
+                        <li><i data-lucide="check" class="check-icon"></i> Poster, Banner & Layout Design</li>
+                        <li><i data-lucide="check" class="check-icon"></i> UI/UX Mobile App Prototyping</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card glass-card reveal-on-scroll">
+                    <div class="service-glow-bg client-glow"></div>
+                    <div class="service-icon"><i data-lucide="sparkles"></i></div>
+                    <h3 class="service-title">Creative Art Direction</h3>
+                    <p class="service-text">Translating concepts into structured creative paths. Helping creators map out their narrative styles, visual guidelines, mood boards, and aesthetic directives for projects.</p>
+                    <ul class="service-features">
+                        <li><i data-lucide="check" class="check-icon"></i> Dynamic Storyboarding</li>
+                        <li><i data-lucide="check" class="check-icon"></i> Styling Guide Consultation</li>
+                        <li><i data-lucide="check" class="check-icon"></i> Visual Asset Planning</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Creative Process Section -->
+    <section id="process" class="process-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">WORKFLOW</span>
+                <h2 class="section-title">Creative Pipeline</h2>
+                <p class="section-desc">A refined step-by-step collaborative methodology designed to guarantee project excellence and timely launches.</p>
+            </div>
+
+            <!-- Timeline -->
+            <div class="timeline">
+                
+                <!-- Step 1 -->
+                <div class="timeline-item reveal-on-scroll">
+                    <div class="timeline-dot">1</div>
+                    <div class="timeline-content glass-card">
+                        <h3 class="timeline-title">01. Discovery & Strategy</h3>
+                        <p class="timeline-text">We discuss your project goals, references, references, and core audience. We set creative directions, project scopes, and map out visual requirements.</p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="timeline-item reveal-on-scroll">
+                    <div class="timeline-dot">2</div>
+                    <div class="timeline-content glass-card">
+                        <h3 class="timeline-title">02. Conceptualization</h3>
+                        <p class="timeline-text">I draft mock designs, outline video scenes, create thematic mood boards, and review rough conceptual sketches. Together, we establish and freeze the final visual style guidelines.</p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="timeline-item reveal-on-scroll">
+                    <div class="timeline-dot">3</div>
+                    <div class="timeline-content glass-card">
+                        <h3 class="timeline-title">03. Production & Polish</h3>
+                        <p class="timeline-text">This is where the magic happens. I compile footage, synchronize audio elements, apply advanced design assets, blend color pallets, and execute pixel-perfect render outputs.</p>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="timeline-item reveal-on-scroll">
+                    <div class="timeline-dot">4</div>
+                    <div class="timeline-content glass-card">
+                        <h3 class="timeline-title">04. Deliver & Launch</h3>
+                        <p class="timeline-text">After structured revisions to perfect every details, I package and render the ultimate files in their maximum definitions and layouts ready for deployment.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Pitch Section -->
+    <section id="contact" class="contact-section section-padding">
+        <div class="container contact-container">
+            
+            <div class="contact-info-panel reveal-on-scroll">
+                <span class="section-tag">GET IN TOUCH</span>
+                <h2 class="section-title">Let's Build Something <span class="gradient-text">Iconic</span></h2>
+                <p class="contact-text">Looking to hire an elite creator for freelance projects? Send me your brief, and let's craft visual assets that elevate your brand.</p>
+                
+                <div class="contact-methods">
+                    <div class="contact-method-card">
+                        <div class="method-icon"><i data-lucide="mail"></i></div>
+                        <div class="method-info">
+                            <span class="method-label">Direct Email</span>
+                            <a href="mailto:hello@designbykrn.com" class="method-value">hello@designbykrn.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-method-card">
+                        <div class="method-icon"><i data-lucide="map-pin"></i></div>
+                        <div class="method-info">
+                            <span class="method-label">Location</span>
+                            <span class="method-value">Remote Worldwide</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="#" class="social-icon" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+                    <a href="#" class="social-icon" aria-label="Dribbble"><i data-lucide="dribbble"></i></a>
+                    <a href="#" class="social-icon" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                    <a href="#" class="social-icon" aria-label="Linkedin"><i data-lucide="linkedin"></i></a>
+                </div>
+            </div>
+
+            <!-- Form -->
+            <div class="contact-form-panel glass-card reveal-on-scroll">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="formName" class="form-label">Full Name</label>
+                        <input type="text" id="formName" class="form-input" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="formEmail" class="form-label">Email Address</label>
+                        <input type="email" id="formEmail" class="form-input" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="formProject" class="form-label">Project Type</label>
+                        <select id="formProject" class="form-input" required>
+                            <option value="" disabled selected>Select a category...</option>
+                            <option value="video">Cinematic Video Editing</option>
+                            <option value="design">Graphic Branding & Poster Design</option>
+                            <option value="uiux">UI/UX Mobile App Design</option>
+                            <option value="direction">Full Creative Direction</option>
+                            <option value="other">Other Creative Work</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="formMessage" class="form-label">Project Details</label>
+                        <textarea id="formMessage" class="form-input form-textarea" placeholder="Briefly describe your vision, timeline, and budget estimation..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block" id="formSubmitBtn">
+                        <span>Send Proposal</span>
+                        <i data-lucide="send"></i>
+                    </button>
+                    <div class="form-message" id="formMessageStatus"></div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p class="copyright">&copy; 2026 Design by KRN. All Rights Reserved.</p>
+            <p class="footer-tagline">Crafting Motion. Defining Aesthetic.</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightboxModal">
+        <div class="lightbox-overlay" id="lightboxOverlay"></div>
+        <div class="lightbox-content glass-card">
+            <button class="lightbox-close" id="lightboxCloseBtn" aria-label="Close Lightbox">
+                <i data-lucide="x"></i>
+            </button>
+            <div class="lightbox-body">
+                <div class="lightbox-media-wrapper" id="lightboxMediaWrapper">
+                    <!-- Dynamic asset inside here (image or video player simulation) -->
+                </div>
+                <div class="lightbox-details">
+                    <span class="lightbox-category" id="lightboxCategory">Video Editing</span>
+                    <h3 class="lightbox-title" id="lightboxTitle">Project Title</h3>
+                    <p class="lightbox-desc" id="lightboxDesc">Detailed project description goes here.</p>
+                    
+                    <div class="lightbox-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Client</span>
+                            <span class="meta-value" id="lightboxClient">Vectra Corp</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Tools Used</span>
+                            <span class="meta-value" id="lightboxTools">Premiere Pro, After Effects</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script Injection -->
+    <script src="script.js"></script>
+</body>
+</html>
