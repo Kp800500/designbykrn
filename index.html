@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design by KRN | Video Editing & Graphic Design Portfolio</title>
+    <meta name="description"
+        content="Stunning digital portfolio of Design by KRN. Premium video editing, cinematic motion graphics, and elite graphic design services. Available for freelance opportunities.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-outline" id="cursorOutline"></div>
+
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <svg class="logo-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#06b6d4" />
+                            <stop offset="50%" stop-color="#6366f1" />
+                            <stop offset="100%" stop-color="#a855f7" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="50" cy="50" r="42" stroke="url(#logo-grad)" stroke-width="3" stroke-dasharray="6 6"
+                        opacity="0.3" />
+                    <line x1="32" y1="26" x2="32" y2="74" stroke="url(#logo-grad)" stroke-width="10"
+                        stroke-linecap="round" />
+                    <line x1="34" y1="50" x2="68" y2="26" stroke="url(#logo-grad)" stroke-width="10"
+                        stroke-linecap="round" />
+                    <line x1="34" y1="50" x2="68" y2="74" stroke="url(#logo-grad)" stroke-width="10"
+                        stroke-linecap="round" />
+                </svg>
+                <span class="logo-accent">KRN</span>
+                <span class="logo-text">DESIGN</span>
+            </a>
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#work" class="nav-link">Work</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#process" class="nav-link">Process</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <span class="status-tag"><span class="status-dot"></span>Available for projects</span>
+                <a href="#contact" class="btn btn-primary btn-sm">Hire Me</a>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav" id="mobileNav">
+        <a href="#home" class="mobile-link">Home</a>
+        <a href="#work" class="mobile-link">Work</a>
+        <a href="#services" class="mobile-link">Services</a>
+        <a href="#process" class="mobile-link">Process</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+        <a href="#contact" class="btn btn-primary">Hire Me</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-bg-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="hero-badge fade-in-up">VISUAL STORYTELLER & DESIGNER</span>
+                <h1 class="hero-title fade-in-up delay-1">
+                    Where Motion <br>Meets <span class="gradient-text">Emotion</span>
+                </h1>
+                <p class="hero-subtitle fade-in-up delay-2">
+                    I am <strong class="highlight-text">Karan Prajapati</strong>. I craft high-octane video edits,
+                    immersive motion graphics, and premium visual identities that demand attention and convert
+                    audiences.
+                </p>
+                <div class="hero-actions fade-in-up delay-3">
+                    <a href="#work" class="btn btn-primary">
+                        <span>Explore My Work</span>
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Start A Project</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Hero Stats Grid -->
+            <div class="hero-stats-grid fade-in-up delay-4">
+                <div class="stat-card glass-card">
+                    <div class="stat-icon-wrapper video-glow">
+                        <i data-lucide="video"></i>
+                    </div>
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Videos Edited</div>
+                </div>
+                <div class="stat-card glass-card">
+                    <div class="stat-icon-wrapper design-glow">
+                        <i data-lucide="palette"></i>
+                    </div>
+                    <div class="stat-number">120+</div>
+                    <div class="stat-label">Graphics Delivered</div>
+                </div>
+                <div class="stat-card glass-card">
+                    <div class="stat-icon-wrapper client-glow">
+                        <i data-lucide="smile"></i>
+                    </div>
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Client Satisfaction</div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span class="scroll-mouse"><span class="scroll-wheel"></span></span>
+            <span class="scroll-text">Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- Work Showcase Section -->
+    <section id="work" class="work-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">PORTFOLIO</span>
+                <h2 class="section-title">Selected Projects</h2>
+                <p class="section-desc">A curated collection of cinematic video edits and striking graphic design
+                    projects crafted for global creators and brands.</p>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="video">Video Editing</button>
+                <button class="filter-btn" data-filter="design">Graphic Design</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="portfolio-grid" id="portfolioGrid">
+
+                <!-- Project Item 1 (Video) -->
+                <div class="portfolio-item glass-card reveal-on-scroll" data-category="video" data-project-id="1">
+                    <div class="portfolio-thumb">
+                        <img src="assets/Godbharai Thumbnail.png" alt="Cinematic Godbharai Thumbnail" loading="lazy">
+                        <div class="portfolio-hover">
+                            <span class="play-btn"><i data-lucide="play"></i></span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="item-tag tag-video">Video Editing</span>
+                        <h3 class="item-title">Godh Bharai: A Beautiful Beginning</h3>
+                        <p class="item-desc">Seamlessly paced to an emotional poetic voiceover, featuring smooth
+                            light-leak transitions and a warm, Cinematic effects and richly saturated traditional color
+                            grade.</p>
+                    </div>
+                </div>
+
+                <!-- Project Item 2 (Video) -->
+                <div class="portfolio-item glass-card reveal-on-scroll" data-category="video" data-project-id="2">
+                    <div class="portfolio-thumb">
+                        <img src="assets/videoframe_2260.png" alt="Wedding Invitation" loading="lazy">
+                        <div class="portfolio-hover">
+                            <span class="play-btn"><i data-lucide="play"></i></span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="item-tag tag-video">Video Editing</span>
+                        <h3 class="item-title">Elegant Watercolor Floral Digital Wedding Invitation</h3>
+                        <p class="item-desc">Built by syncing elegant watercolor floral aesthetics and smooth typography
+                            with the soundtrack, using motion graphics software for seamless photo masking and
+                            transitions.</p>
+                    </div>
+                </div>
+
+                <!-- Project Item 3 (Video) -->
+                <div class="portfolio-item glass-card reveal-on-scroll" data-category="video" data-project-id="3">
+                    <div class="portfolio-thumb">
+                        <img src="assets/Wedding Thumbnail.png" alt="Wedding Thumbnail" loading="lazy">
+                        <div class="portfolio-hover">
+                            <span class="play-btn"><i data-lucide="play"></i></span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="item-tag tag-video">Video Editing</span>
+                        <h3 class="item-title">Dynamic Wedding Highlight Reel | Comedic & High-Energy Edit</h3>
+                        <p class="item-desc">Created by fusing comedic pop-culture memes and stylized photo cutout
+                            animations with vibrant event footage, using fast-paced, rhythmic editing to perfectly match
+                            the upbeat soundtrack.</p>
+                    </div>
+                </div>
+
+                <!-- Project Item 4 (Design) -->
+                <div class="portfolio-item glass-card reveal-on-scroll" data-category="design" data-project-id="4">
+                    <div class="portfolio-thumb">
+                        <img src="assets/Maverick Marketing Material Mockup.png" alt="Minimalist Brand Identity Mockup"
+                            loading="lazy">
+                        <div class="portfolio-hover">
+                            <span class="play-btn"><i data-lucide="maximize-2"></i></span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="item-tag tag-design">Graphic Design</span>
+                        <h3 class="item-title">Maverick Straps – Brand Identity Mockup</h3>
+                        <p class="item-desc">Minimalist high-end brand guidelines, Premium corporate identity
+                            stationery, and logo layout.</p>
+                    </div>
+                </div>
+
+                <!-- Project Item 5 (Design) -->
+                <div class="portfolio-item glass-card reveal-on-scroll" data-category="design" data-project-id="5">
+                    <div class="portfolio-thumb">
+                        <img src="assets/design-img-2.png" alt="Synthwave Neon Poster Design" loading="lazy">
+                        <div class="portfolio-hover">
+                            <span class="play-btn"><i data-lucide="maximize-2"></i></span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="item-tag tag-design">Graphic Design</span>
+                        <h3 class="item-title">Retro Outrun Poster Series</h3>
+                        <p class="item-desc">Vibrant synthwave key art, custom typography lockup, and cyberpunk digital
+                            illustration.</p>
+                    </div>
+                </div>
+
+                <!-- Project Item 6 (Design) -->
+                <div class="portfolio-item glass-card reveal-on-scroll" data-category="design" data-project-id="6">
+                    <div class="portfolio-thumb">
+                        <img src="assets/design-img-3.png" alt="SaaS Mobile App UI Mockup" loading="lazy">
+                        <div class="portfolio-hover">
+                            <span class="play-btn"><i data-lucide="maximize-2"></i></span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="item-tag tag-design">Graphic Design</span>
+                        <h3 class="item-title">AeroSync Mobile Dashboard UI</h3>
+                        <p class="item-desc">High-fidelity dark mode application interface design, glowing charts, and
+                            user experience layouts.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">EXPERTISE</span>
+                <h2 class="section-title">My Craft</h2>
+                <p class="section-desc">Delivering tailored media services that elevate brand value and captivate
+                    audiences globally.</p>
+            </div>
+
+            <div class="services-grid">
+
+                <!-- Service 1 -->
+                <div class="service-card glass-card reveal-on-scroll">
+                    <div class="service-glow-bg video-glow"></div>
+                    <div class="service-icon"><i data-lucide="clapperboard"></i></div>
+                    <h3 class="service-title">Cinematic Video Editing</h3>
+                    <p class="service-text">High-end dynamic editing tailored for YouTube, promotional campaigns,
+                        commercial advertisements, and social media reels. Expert sound integration, transitions, and
+                        immersive pacing.</p>
+                    <ul class="service-features">
+                        <li><i data-lucide="check" class="check-icon"></i> Color Grading & LUT Matching</li>
+                        <li><i data-lucide="check" class="check-icon"></i> SFX Design & Audio Mixing</li>
+                        <li><i data-lucide="check" class="check-icon"></i> Motion Graphics & Typography</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card glass-card reveal-on-scroll">
+                    <div class="service-glow-bg design-glow"></div>
+                    <div class="service-icon"><i data-lucide="vector"></i></div>
+                    <h3 class="service-title">Premium Graphic Design</h3>
+                    <p class="service-text">Creating visually rich assets that tell a story. From sleek vector branding
+                        to immersive print-ready posters and high-fidelity, user-centered application screen mockups.
+                    </p>
+                    <ul class="service-features">
+                        <li><i data-lucide="check" class="check-icon"></i> Brand & Visual Identity Kits</li>
+                        <li><i data-lucide="check" class="check-icon"></i> Poster, Banner & Layout Design</li>
+                        <li><i data-lucide="check" class="check-icon"></i> UI/UX Mobile App Prototyping</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card glass-card reveal-on-scroll">
+                    <div class="service-glow-bg client-glow"></div>
+                    <div class="service-icon"><i data-lucide="sparkles"></i></div>
+                    <h3 class="service-title">Creative Art Direction</h3>
+                    <p class="service-text">Translating concepts into structured creative paths. Helping creators map
+                        out their narrative styles, visual guidelines, mood boards, and aesthetic directives for
+                        projects.</p>
+                    <ul class="service-features">
+                        <li><i data-lucide="check" class="check-icon"></i> Dynamic Storyboarding</li>
+                        <li><i data-lucide="check" class="check-icon"></i> Styling Guide Consultation</li>
+                        <li><i data-lucide="check" class="check-icon"></i> Visual Asset Planning</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Creative Process Section -->
+    <section id="process" class="process-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">WORKFLOW</span>
+                <h2 class="section-title">Creative Pipeline</h2>
+                <p class="section-desc">A refined step-by-step collaborative methodology designed to guarantee project
+                    excellence and timely launches.</p>
+            </div>
+
+            <!-- Timeline -->
+            <div class="timeline">
+
+                <!-- Step 1 -->
+                <div class="timeline-item reveal-on-scroll">
+                    <div class="timeline-dot">1</div>
+                    <div class="timeline-content glass-card">
+                        <h3 class="timeline-title">01. Discovery & Strategy</h3>
+                        <p class="timeline-text">We discuss your project goals, references, references, and core
+                            audience. We set creative directions, project scopes, and map out visual requirements.</p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="timeline-item reveal-on-scroll">
+                    <div class="timeline-dot">2</div>
+                    <div class="timeline-content glass-card">
+                        <h3 class="timeline-title">02. Conceptualization</h3>
+                        <p class="timeline-text">I draft mock designs, outline video scenes, create thematic mood
+                            boards, and review rough conceptual sketches. Together, we establish and freeze the final
+                            visual style guidelines.</p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="timeline-item reveal-on-scroll">
+                    <div class="timeline-dot">3</div>
+                    <div class="timeline-content glass-card">
+                        <h3 class="timeline-title">03. Production & Polish</h3>
+                        <p class="timeline-text">This is where the magic happens. I compile footage, synchronize audio
+                            elements, apply advanced design assets, blend color pallets, and execute pixel-perfect
+                            render outputs.</p>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="timeline-item reveal-on-scroll">
+                    <div class="timeline-dot">4</div>
+                    <div class="timeline-content glass-card">
+                        <h3 class="timeline-title">04. Deliver & Launch</h3>
+                        <p class="timeline-text">After structured revisions to perfect every details, I package and
+                            render the ultimate files in their maximum definitions and layouts ready for deployment.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Pitch Section -->
+    <section id="contact" class="contact-section section-padding">
+        <div class="container contact-container">
+
+            <div class="contact-info-panel reveal-on-scroll">
+                <span class="section-tag">GET IN TOUCH</span>
+                <h2 class="section-title">Let's Build Something <span class="gradient-text">Iconic</span></h2>
+                <p class="contact-text">Looking to hire an elite creator for freelance projects? Send me your brief, and
+                    let's craft visual assets that elevate your brand.</p>
+
+                <div class="contact-methods">
+                    <div class="contact-method-card">
+                        <div class="method-icon"><i data-lucide="mail"></i></div>
+                        <div class="method-info">
+                            <span class="method-label">Direct Email</span>
+                            <a href="mailto:kp800500@gmail.com" class="method-value">kp800500@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-method-card">
+                        <div class="method-icon"><i data-lucide="message-circle"></i></div>
+                        <div class="method-info">
+                            <span class="method-label">WhatsApp Chat</span>
+                            <a href="https://wa.me/qr/EI2HODV2IOJTG1" target="_blank" rel="noopener noreferrer"
+                                class="method-value">Open Chat</a>
+                        </div>
+                    </div>
+                    <div class="contact-method-card">
+                        <div class="method-icon"><i data-lucide="map-pin"></i></div>
+                        <div class="method-info">
+                            <span class="method-label">Location</span>
+                            <span class="method-value">Remote Worldwide</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://youtube.com/@karanprajapati3615?si=zMU2pUnSDHkvCTAG" target="_blank"
+                        rel="noopener noreferrer" class="social-icon" aria-label="YouTube">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20"
+                            height="20">
+                            <path
+                                d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.11C19.518 3.545 12 3.545 12 3.545s-7.518 0-9.388.508a3.003 3.003 0 0 0-2.11 2.11C0 8.033 0 12 0 12s0 3.967.502 5.837a3.003 3.003 0 0 0 2.11 2.11c1.87.508 9.388.508 9.388.508s7.518 0 9.388-.508a3.003 3.003 0 0 0 2.11-2.11C24 15.967 24 12 24 12s0-3.967-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.behance.net/karanprajapati36" target="_blank" rel="noopener noreferrer"
+                        class="social-icon" aria-label="Behance">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" width="20"
+                            height="20">
+                            <path
+                                d="M4.654 3c.419 0 .821.07 1.205.21.384.14.72.338 1.01.597.29.258.522.568.697.93.175.362.262.771.262 1.228 0 .546-.118 1.033-.355 1.458a3.76 3.76 0 0 1-.983 1.112c.516.277.928.667 1.237 1.17.309.504.464 1.11.464 1.816 0 .53-.092 1.017-.275 1.462a3.51 3.51 0 0 1-.772 1.181 4.1 4.1 0 0 1-1.185.78C5.405 14.86 4.87 15 4.292 15H0V3h4.654zm.135 4.545c.427 0 .762-.117 1.005-.35.244-.233.366-.554.366-.962a1.44 1.44 0 0 0-.205-.767.994.994 0 0 0-.583-.446c-.16-.046-.407-.069-.742-.069H1.483v2.594h3.306zm.224 4.887c.488 0 .874-.124 1.157-.37.283-.247.424-.593.424-1.038 0-.422-.132-.733-.396-.935-.263-.203-.687-.305-1.272-.305H1.483v2.648h3.53zm7.042-3.278c.009.252.046.49.112.715h4.167c-.014-.15-.045-.298-.093-.442a3.01 3.01 0 0 0-.288-.653 2.402 2.402 0 0 0-.53-.591c-.243-.198-.563-.297-.962-.297-.577 0-1.025.187-1.343.56-.319.374-.495.918-.53 1.632h4.526zm.053-1.63c.277-.456.66-.807 1.148-1.054.489-.246 1.066-.369 1.73-.369.64 0 1.2.115 1.683.346.483.23.864.57 1.144 1.016.28.447.458.995.534 1.646.035.306.053.682.053 1.13h-6.27c.02.684.204 1.208.552 1.572.348.365.845.547 1.493.547.417 0 .777-.07 1.077-.21a1.99 1.99 0 0 0 .736-.583l1.258.761c-.377.587-.887 1.047-1.53 1.378-.643.33-1.412.496-2.307.496-.757 0-1.442-.143-2.053-.429a3.84 3.84 0 0 1-1.472-1.21 4.09 4.09 0 0 1-.84-1.797c-.088-.475-.132-1.017-.132-1.626 0-.616.048-1.182.144-1.697a4.24 4.24 0 0 1 .499-1.42 3.87 3.87 0 0 1 1.064-1.149c.47-.36 1.037-.54 1.7-.54.675 0 1.267.172 1.777.514.509.343.896.815 1.16 1.416l-.004-.002zm2.14-5.32h4.593v1.2H14.11V4.28z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/designbykrn?igsh=MXgyN2o2cG9jd2xtaw==" target="_blank"
+                        rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/karan-prajapati-b76607218?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                        target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Linkedin">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20"
+                            height="20">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Form -->
+            <div class="contact-form-panel glass-card reveal-on-scroll">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="formName" class="form-label">Full Name</label>
+                        <input type="text" id="formName" class="form-input" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="formEmail" class="form-label">Email Address</label>
+                        <input type="email" id="formEmail" class="form-input" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="formProject" class="form-label">Project Type</label>
+                        <select id="formProject" class="form-input" required>
+                            <option value="" disabled selected>Select a category...</option>
+                            <option value="video">Cinematic Video Editing</option>
+                            <option value="design">Graphic Branding & Poster Design</option>
+                            <option value="uiux">UI/UX Mobile App Design</option>
+                            <option value="direction">Full Creative Direction</option>
+                            <option value="other">Other Creative Work</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="formMessage" class="form-label">Project Details</label>
+                        <textarea id="formMessage" class="form-input form-textarea"
+                            placeholder="Briefly describe your vision, timeline, and budget estimation..."
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block" id="formSubmitBtn">
+                        <span>Send Proposal</span>
+                        <i data-lucide="send"></i>
+                    </button>
+                    <div class="form-message" id="formMessageStatus"></div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <a href="#" class="logo">
+                <svg class="logo-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="logo-grad-footer" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#06b6d4" />
+                            <stop offset="50%" stop-color="#6366f1" />
+                            <stop offset="100%" stop-color="#a855f7" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="50" cy="50" r="42" stroke="url(#logo-grad-footer)" stroke-width="3"
+                        stroke-dasharray="6 6" opacity="0.3" />
+                    <line x1="32" y1="26" x2="32" y2="74" stroke="url(#logo-grad-footer)" stroke-width="10"
+                        stroke-linecap="round" />
+                    <line x1="34" y1="50" x2="68" y2="26" stroke="url(#logo-grad-footer)" stroke-width="10"
+                        stroke-linecap="round" />
+                    <line x1="34" y1="50" x2="68" y2="74" stroke="url(#logo-grad-footer)" stroke-width="10"
+                        stroke-linecap="round" />
+                </svg>
+                <span class="logo-accent">KRN</span>
+                <span class="logo-text">DESIGN</span>
+            </a>
+            <p class="copyright">&copy; 2026 Design by KRN. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="https://youtube.com/@karanprajapati3615?si=zMU2pUnSDHkvCTAG" target="_blank"
+                    rel="noopener noreferrer" class="social-icon" aria-label="YouTube">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20"
+                        height="20">
+                        <path
+                            d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.11C19.518 3.545 12 3.545 12 3.545s-7.518 0-9.388.508a3.003 3.003 0 0 0-2.11 2.11C0 8.033 0 12 0 12s0 3.967.502 5.837a3.003 3.003 0 0 0 2.11 2.11c1.87.508 9.388.508 9.388.508s7.518 0 9.388-.508a3.003 3.003 0 0 0 2.11-2.11C24 15.967 24 12 24 12s0-3.967-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                    </svg>
+                </a>
+                <a href="https://www.behance.net/karanprajapati36" target="_blank" rel="noopener noreferrer"
+                    class="social-icon" aria-label="Behance">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" width="20"
+                        height="20">
+                        <path
+                            d="M4.654 3c.419 0 .821.07 1.205.21.384.14.72.338 1.01.597.29.258.522.568.697.93.175.362.262.771.262 1.228 0 .546-.118 1.033-.355 1.458a3.76 3.76 0 0 1-.983 1.112c.516.277.928.667 1.237 1.17.309.504.464 1.11.464 1.816 0 .53-.092 1.017-.275 1.462a3.51 3.51 0 0 1-.772 1.181 4.1 4.1 0 0 1-1.185.78C5.405 14.86 4.87 15 4.292 15H0V3h4.654zm.135 4.545c.427 0 .762-.117 1.005-.35.244-.233.366-.554.366-.962a1.44 1.44 0 0 0-.205-.767.994.994 0 0 0-.583-.446c-.16-.046-.407-.069-.742-.069H1.483v2.594h3.306zm.224 4.887c.488 0 .874-.124 1.157-.37.283-.247.424-.593.424-1.038 0-.422-.132-.733-.396-.935-.263-.203-.687-.305-1.272-.305H1.483v2.648h3.53zm7.042-3.278c.009.252.046.49.112.715h4.167c-.014-.15-.045-.298-.093-.442a3.01 3.01 0 0 0-.288-.653 2.402 2.402 0 0 0-.53-.591c-.243-.198-.563-.297-.962-.297-.577 0-1.025.187-1.343.56-.319.374-.495.918-.53 1.632h4.526zm.053-1.63c.277-.456.66-.807 1.148-1.054.489-.246 1.066-.369 1.73-.369.64 0 1.2.115 1.683.346.483.23.864.57 1.144 1.016.28.447.458.995.534 1.646.035.306.053.682.053 1.13h-6.27c.02.684.204 1.208.552 1.572.348.365.845.547 1.493.547.417 0 .777-.07 1.077-.21a1.99 1.99 0 0 0 .736-.583l1.258.761c-.377.587-.887 1.047-1.53 1.378-.643.33-1.412.496-2.307.496-.757 0-1.442-.143-2.053-.429a3.84 3.84 0 0 1-1.472-1.21 4.09 4.09 0 0 1-.84-1.797c-.088-.475-.132-1.017-.132-1.626 0-.616.048-1.182.144-1.697a4.24 4.24 0 0 1 .499-1.42 3.87 3.87 0 0 1 1.064-1.149c.47-.36 1.037-.54 1.7-.54.675 0 1.267.172 1.777.514.509.343.896.815 1.16 1.416l-.004-.002zm2.14-5.32h4.593v1.2H14.11V4.28z" />
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/1__karthik_666?igsh=MXgyN2o2cG9jd2xtaw==" target="_blank"
+                    rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/karan-prajapati-b76607218?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                    target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Linkedin">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20"
+                        height="20">
+                        <path
+                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                    </svg>
+                </a>
+            </div>
+            <p class="footer-tagline">Crafting Motion. Defining Aesthetic.</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightboxModal">
+        <div class="lightbox-overlay" id="lightboxOverlay"></div>
+        <div class="lightbox-content glass-card">
+            <button class="lightbox-close" id="lightboxCloseBtn" aria-label="Close Lightbox">
+                <i data-lucide="x"></i>
+            </button>
+            <div class="lightbox-body">
+                <div class="lightbox-media-wrapper" id="lightboxMediaWrapper">
+                    <!-- Dynamic asset inside here (image or video player simulation) -->
+                </div>
+                <div class="lightbox-details">
+                    <span class="lightbox-category" id="lightboxCategory">Video Editing</span>
+                    <h3 class="lightbox-title" id="lightboxTitle">Project Title</h3>
+                    <p class="lightbox-desc" id="lightboxDesc">Detailed project description goes here.</p>
+
+                    <div class="lightbox-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Client</span>
+                            <span class="meta-value" id="lightboxClient">Vectra Corp</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Tools Used</span>
+                            <span class="meta-value" id="lightboxTools">Premiere Pro, After Effects</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script Injection -->
+    <script src="script.js"></script>
+</body>
+
+</html>
